@@ -1,0 +1,617 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*--------------------------- Encabezado---------------------------- */
+header#encabezado{
+	background-color: black;
+	display: flex;
+	width: 100%;
+	max-width: 100%;
+}
+div#contLogo{
+	display: flex
+}
+img#logoimg{
+	width: 120px;
+	height: 120px;
+	padding-left: 150px;
+}
+/*
+h1#logo{
+	font-family: Brush Script MT;
+	color: black;
+	padding-left: 40px;
+	margin-right: 200px;
+}
+*/
+/*--------------------------------menu----------------------------------*/
+
+div#navegadorMenu{
+	display: flex;
+}
+#navegadorMenu ul{
+	position: absolute;
+	top: 15px;
+	right: 120px;
+	width: 50%;
+	list-style: none;
+	text-align: center;
+	/*background-color: rgba(235,237,239,0.4);*/
+	transition: all 500ms ease;
+	z-index: 2000;
+	/*opacity: 0;
+	visibility: hidden;*/
+}
+#menu >li {
+	display: inline-block;
+	padding: 20px;
+}
+#menu >li>a{
+	text-decoration: none;
+	font-family: arial ;
+	font-size: 15px;
+	color: white;
+}
+#menu >li:hover{
+	background-color: red;
+}
+
+/*--------------------------contenido de la pagina----------------------*/
+div#contInicio{
+	position: relative;
+}
+img#imInicio{
+	width: 100%;
+	max-width: 100%;
+	height: 550px;
+	object-fit: cover;
+}
+div#slogan{
+	font-size: 20px;
+	font-family: arial, bold;
+	background-color: red;
+	width: 40%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 45%;
+	left: 50%;
+	transform: translateX(15%) translateY(-90%);
+}
+button#botonOrden{
+	font-size: 15px;
+	font-family: arial, bold;
+	padding: 10px;
+	border-radius: 10%;
+	background-color: white;
+	width: 40%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 50%;
+	left: 50%;
+	transform: translateX(15%) translateY(10%);
+}
+#botonOrden > a{
+	text-decoration: none;
+}
+/*-------------------------Contenido especial--------------------*/
+div#secEspecial{
+	width: 100%;
+	text-align: center;
+}
+h2#titulo{
+	font-family: arial ;
+	font-size: 30px;
+}
+
+
+div#seccionEspecial{
+	width: 100%
+	max-width: 100%;
+	padding:0px 16% 0px;
+	margin: 0;
+}
+div#contenedor{
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	flex-direction: wrap;
+	margin-bottom: 3%;
+	border-radius: 10%;
+}
+div#especial{
+	width: 45%;
+}
+img#img1, #img2, #img3, #img4{
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10%;
+
+}
+div#especialText{
+	width: 50%;
+	margin: 4%;
+}
+h3#titEspecial{
+	color: white;
+	font-family: arial;
+	text-align: center;
+
+}
+p#descEspecial{
+	color: white;
+	font-family: arial;
+	text-align: center;
+}
+/*--------------------------Pie de pagina---------------------------*/
+footer#piePagina > div#columnas{
+	background-color: red;
+	width: 100%;
+	max-width: 100%;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 5px, 0px;
+	justify-content: center;
+}
+footer#piePagina{
+	font-family: arial;
+	text-align: center;
+	color: white;
+	display: flex;
+	width: 100%;
+	max-width: 100%;
+}
+div#columnas{
+	background-color: pink;
+	padding: 20px;
+}
+div#columna1{
+	margin: 15px;
+}
+div#columna2{
+	margin: 15px;
+}
+div#columna2 > a{
+	padding: 10px;
+	margin: 0;
+}
+img#facebook{
+	border-radius: 50%;
+	background-color: white;
+}
+img#twitter{
+	border-radius: 50%;
+	background-color: white;
+}
+img#gmail{
+	border-radius: 50%;
+	background-color: white;
+}
+/*-----------Ajuste de acuerdo a medidas de la pantalla--------*/
+@media screen and (min-width: 480px){
+
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 1024px){
+
+}
+/*----------------------PAGINA MENU----------------------------*/
+div#titulos{
+	width: 100%;
+	text-align: center;
+}
+h2#titulo{
+	font-family: arial;
+}
+div#menuPizzas{
+	width: 100%
+	max-width: 100%;
+	padding:0px 16% 0px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div#contPizzas{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#pizza{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contPizzas1{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	flex-direction: wrap;
+	margin-bottom: 10px;
+}
+div#pizza1{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contPizzas2{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	flex-direction: wrap;
+}
+div#pizza2{
+	width: 85%;
+	margin-right: 15px;
+}
+h3#titPizza{
+	text-align: center;
+	font-family: arial;
+}
+p#descPizza{
+	text-align: center;
+	font-family: arial;
+}
+img#pizza1, #pizza2, #pizza3, #pizza4, 
+#pizza5, #pizza6, #pizza7, #pizza8, #pizza9,
+#pizza10
+{
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+
+div#menuBebidas{
+	width: 100%
+	max-width: 100%;
+	padding:0px 16% 0px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div#contBebidas{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida{
+	width: 85%;
+	margin-right: 15px;
+}
+
+div#contBebidas1{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida1{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contBebidas2{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida2{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contBebidas3{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida3{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contBebidas4{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida4{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contBebidas5{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida5{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contBebidas6{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#bebida6{
+	width: 85%;
+	margin-right: 15px;
+}
+
+
+h3#titBebida{
+	text-align: center;
+	font-family: arial;
+}
+p#descBebida{
+	text-align: center;
+	font-family: arial;
+}
+img#bebida1, #bebida2, #bebida3, #bebida4, #bebida5,
+#bebida6, #bebida7, #bebida8, #bebida9,#bebida10, 
+#bebida11, #bebida12, #bebida13, #bebida14, #bebida15, 
+#bebida16, #bebida17, #bebida18, #bebida19, #bebida20,
+#bebida21, #bebida22, #bebida23, #bebida24, #bebida25, 
+#bebida26, #bebida27
+{
+	width: 100%;
+	object-fit: cover;
+}
+
+
+div#menuPostres{
+	width: 100%
+	max-width: 100%;
+	padding:0px 16% 0px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div#contPostres{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#postre{
+	width: 85%;
+	margin-right: 15px;
+}
+
+div#contPostres1{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#postre1{
+	width: 85%;
+	margin-right: 15px;
+}
+div#contPostres2{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div#postre2{
+	width: 85%;
+	margin-right: 15px;
+}
+h3#titPostre{
+	text-align: center;
+	font-family: arial;
+}
+p#descPostre{
+	text-align: center;
+	font-family: arial;
+}
+img#postre1, #postre2, #postre3, #postre4, #postre5,
+#postre6, #postre7, #postre8, #postre9,#postre10, 
+#postre13, #postre12
+{
+	width: 100%;
+	object-fit: cover;
+}
+/*----------------------PAGINA PROMOCIONES----------------------*/
+div#contenido{
+	width: 100%
+	max-width: 100%;
+	padding:0px 5% 0px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+img#promociones{
+	width: 100%;
+	max-width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+div#contPromociones{
+	position: relative;
+}
+div#texto1{
+	display: flex;
+	font-size: 50px;
+	font-family: arial, bold;
+	border: black 7px double;
+	width: 30%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 45%;
+	left: 50%;
+	transform: translateX(35%) translateY(-50%);
+}
+div#texto2{
+	display: flex;
+	font-size: 50px;
+	font-family: arial, bold;
+	border: black 7px double;
+	width: 30%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-110%) translateY(-50%);
+}
+div#texto3{
+	display: flex;
+	font-size: 50px;
+	font-family: arial, bold;
+	border: black 7px double;
+	width: 30%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: 1500;
+	top: 45%;
+	left: 50%;
+	transform: translateX(35%) translateY(-50%);
+}
+
+/*--------------------CONTENIDO PAGINA EVENTOS--------------------*/
+div#contEventoImg{
+}
+div#contEventoImg > img{
+	width: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+h1#evento{
+	background-color: black;
+	font-family: arial, bold;
+	width: 40%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	z-index: ;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%) ;
+}
+
+
+div#contInformacion{
+	width: 100%
+	max-width: 100%;
+	padding:0px 16% 0px;
+	margin: 0;
+}
+div#contEvento{
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	flex-direction: wrap;
+}
+div#evento{
+	width: 45%;
+}
+img#evento1, #evento2, #evento3, #evento4{
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+
+}
+div#eventoText{
+	width: 50%;
+	margin: 4%;
+}
+h3#titEvento{
+	color: white;
+	font-family: arial;
+	text-align: center;
+
+}
+p#descEvento{
+	color: white;
+	font-family: arial;
+	text-align: center;
+}
+/*----------------------CONTENIDO PAGINA GALERIA----------------------*/
+ul#contGaleria{
+	padding: 0px;
+	margin: 0px 15% 0px;
+	margin-bottom: 35px;
+}
+#contGaleria > li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 7px;
+}
+#contGaleria > li > img{
+	padding: 0px;
+	object-fit: cover;
+	display: flex;
+}
+/*----------------------CONTENIDO PAGINA GALERIA----------------------*/
+div#contNosotrosImg{
+	background-color: black;
+	padding: 0px 20% 0px;
+}
+div#contNosotrosImg > img{
+	width: 50%;
+	max-width: 100%;
+	object-fit: cover;
+	transform: translateX(50%) ;
+}
+h1#nosotros{
+	font-family: arial, bold;
+	width: 40%;
+	color: black;
+	text-align: center;
+	transform: translateX(75%)
+	/*
+	top: 20%;
+	left: 50%;
+	transform: translateX(-40%);*/
+}
+/*-------------------CONTENIDO PAGINA NOSOTROS-----------------*/
+div#contFilo{
+	padding: 0px 16% 0px;
+	display: flex;
+	flex-direction: column;
+}
+div#contMision{
+	padding:0px 16% 0px;
+	display: flex;
+	flex-direction: column;
+	flex-direction: row;
+}
+div#contMision2{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+div#contValores{
+	padding: 0px 16% 0px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
